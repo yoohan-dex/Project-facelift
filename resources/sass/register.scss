@@ -1,0 +1,92 @@
+
+.auth-box{
+	min-height:500px; 
+  
+	
+	
+	background: #eee;
+  .other-login{
+    background: #fff;
+    min-height: 400px;
+    
+    top: 50px;
+    
+    .tips{
+      margin-top:100px;
+      margin-left: 50px; 
+      
+    }
+    
+    .auth-list{
+      margin-top:50px;
+      margin-left: 50px;
+      margin-right:auto;
+      
+      .auth-wechat,
+      .auth-alibaba,
+      .auth-weibo,
+      .auth-qq{
+        position: relative;
+        color: red;
+        float: left;
+        margin-left:25px;
+      }
+      .auth-wechat{       
+	      background-position: -53px;
+      }
+      .auth-weibo{        
+	      background-position: -106px;
+      }
+      .auth-alibaba{
+	      background-position: -159px;
+      }
+      
+      a{
+        	background-image: url(../img/oauth-logo.png);
+	        background-repeat: no-repeat;
+          width: 53px;
+          height: 53px;
+          position: absolute;
+          top: auto;
+          left: auto;
+          text-decoration: none;
+          span{
+            	position: relative;
+              top: 110%;
+              left: 25%;
+          }
+      }
+    }
+  }
+	
+}
+.reg-right{
+  top:60px;
+  transform: all 1s;
+}
+.reg-right-up{
+  top:20px;
+}
+.lessInput{
+  display: none;
+  transition: all 1s;
+}
+.moreInput{
+  display: block;
+}
+.moreButton{
+  cursor:pointer;
+  
+}
+.moreButton:hover,
+.moreArrow:hover{
+  color: orange;
+}
+.moreArrow{
+  transform: all 1s;
+  font-size: 10px;
+}
+.upArrow{
+  transform: rotate(180deg);
+  
+}

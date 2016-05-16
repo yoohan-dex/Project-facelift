@@ -1,0 +1,193 @@
+// Bootstrap Starter Template Styles
+
+body {
+  padding-top: 0px;
+
+}
+@media (max-width: 768px){
+.navbar-nav>li {
+  float:left;
+  
+  }
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.container{
+  width: 980px;
+}
+.short{
+  min-height: 30px;
+  li{
+    a{
+      padding-top:5px; 
+      height: 30px;
+    }
+  }
+}
+
+.logocol{
+  height: 50px;
+  margin-bottom: 50px;
+}
+.logobox{
+  width:250px;
+  height: 50px;
+  
+  position: absolute;
+}
+
+.logo{
+  a{
+    position: absolute;
+    
+    margin-left: 20px;
+    height: 40px;
+    width: 118px;
+    background-repeat: no-repeat;
+    display: block;
+    background-image: url(../img/sprite.png);
+  }
+  
+}
+.location{
+  position: absolute;
+	left: 150px;
+	height: 40px;
+	.loc{font-size: 22px;}
+  .loc:hover{
+  .icon{
+    -webkit-transition-duration: 0.5s;
+	  transition-duration: 0.5s; 
+	  -webkit-transform: scale(0.7); 
+	  transform: scale(0.7);
+  }
+	color:coral;
+	
+}
+  i{
+    font-size: 14px;
+  }
+	cursor: pointer;
+}
+
+.location-list{
+  position: absolute;
+  width:600px;
+  
+  margin-top:10px; 
+  border: 1px solid darkgray;
+  background: white;
+  z-index: 9;
+  .list-card{
+    position: relative;
+    
+    background: white;
+    margin: 3% 5%;
+   
+    .loc-cate,
+    .loc-list{
+      
+      
+    }
+  }
+}
+.loc-hidden{
+  display: none;
+}
+
+.search-bar{
+  position: absolute;
+  
+  width:450px;
+  top: 5%;
+  border: 3px solid orange;
+  .search-input:focus{
+    outline-width: 8px;
+  }
+  .search-input {
+    position: relative;
+    
+    border:0px;
+    
+    width: 400px;
+    height: 36px;
+    font-size: 14px;
+    padding: 10px;
+	
+  }
+  a{
+    position: relative;
+    height: 36px;
+    width: 50px;
+  }
+  .miss{
+    display:none;
+    
+  }
+  .search-button{
+    right:0px;
+    position: absolute;
+    
+    background:orange;
+    width: 50px;
+    height: 36px;
+    cursor: pointer;
+    i{
+      position: absolute;
+      margin: auto;
+      font-size: 30px;
+      left: 25%;
+      top:5%;
+      color:white;
+    }
+  }
+  .search-button:hover{
+    background:#f37;
+    i{
+      color:gray;
+    }
+  }
+}
+
+.main-nav,
+nav-bar{
+  position: absolute;
+  top: 110px;
+  width: 100%;
+  background: orange;
+  border-radius: 0px;
+  min-height: 40px;
+  
+  border:0px;
+  .nav{
+      li{
+
+      
+      padding:0px 40px 0 40px;
+      text-align: center;
+      a,
+      a:hover{
+        color:white;
+        height: 40px;
+        padding-top: 10px;
+        width: 100px;
+      }
+      
+    }
+    li:hover{
+      background: orangered;
+    }
+  }
+  
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.open>dropdown-menu {
+    display: block;
+}
