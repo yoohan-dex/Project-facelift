@@ -8,6 +8,9 @@ var gulp = require('gulp'),
 var postcss       = require('gulp-postcss');
 
 var autoprefixer  = require('autoprefixer');  
+var scss          = require('postcss-scss');
+var cssnext       = require('postcss-cssnext');
+var nested        = require('postcss-nested');
 var browserSync   = require('browser-sync').create();
 var reload        = browserSync.reload;
 
@@ -15,7 +18,11 @@ var config = {
   sassPath: './resources/sass',
   bowerDir: './bower_components'
 }
-
+ var processors = [
+    nested,
+    autoprefixer({browsers: ['last 1 version']}),
+    
+  ];
 gulp.task('bower', () => {
   return bower()
     .pipe(gulp.dest(config.bowerDir))
@@ -26,10 +33,6 @@ gulp.task('icons', () => {
 })
 
 gulp.task('css', () => {
-   var processors = [
-    
-    
-  ];
   return gulp.src(config.sassPath + '/style.scss')
     .pipe(sass({
       style: 'compressed',

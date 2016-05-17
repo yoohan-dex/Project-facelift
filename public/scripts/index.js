@@ -18,13 +18,21 @@
     regRight.toggleClass('reg-right-up');
   }
 
-  var dropDown = $('#myStatus .dropdown');
-  dropDown.hover(openDropDown);
-  function openDropDown(){
-    dropDown.toggleClass('open');
+  var dropDown_topbar = $('#myStatus .dropdown');
+  dropDown_topbar.hover(openDropDown_topbar);
+  function openDropDown_topbar(){
+    dropDown_topbar.toggleClass('open');
+  }
+  
+  
+  var dropDown_queryItem = $('#query-item .btn-group');
+  dropDown_queryItem.hover(openDropDown_queryItem);
+  function openDropDown_queryItem(){
+    dropDown_queryItem.toggleClass('open');
   }
 })();
 //topbar^^
+  
 
 
 

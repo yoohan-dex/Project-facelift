@@ -2,7 +2,7 @@
 
 body {
   padding-top: 0px;
-
+  background:#ddd;
 }
 @media (max-width: 768px){
 .navbar-nav>li {
@@ -17,8 +17,10 @@ body {
 .container{
   width: 980px;
 }
+
 .short{
   min-height: 30px;
+  margin-bottom: 0px;
   li{
     a{
       padding-top:5px; 
@@ -26,7 +28,13 @@ body {
     }
   }
 }
-
+.logo-bar{
+  background: white;
+  height: 100px;
+  .logo-bar-box{
+    margin-top:20px;
+  }
+}
 .logocol{
   height: 50px;
   margin-bottom: 50px;
@@ -99,9 +107,8 @@ body {
 
 .search-bar{
   position: absolute;
-  
+  margin-top: -5px;
   width:450px;
-  top: 5%;
   border: 3px solid orange;
   .search-input:focus{
     outline-width: 8px;
@@ -152,7 +159,7 @@ body {
 }
 
 .main-nav,
-nav-bar{
+.nav-bar{
   position: absolute;
   top: 110px;
   width: 100%;

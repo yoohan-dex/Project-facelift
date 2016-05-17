@@ -1,4 +1,4 @@
-// Add custom font
+//  Add custom font
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
 $font-family-base: 'Raleway', sans-serif;
 
@@ -9,3 +9,4 @@ $font-family-base: 'Raleway', sans-serif;
 @import "register.scss";
 @import "test.scss";
 @import "navigation.scss";
+@import "mainItem.scss";
