@@ -2,11 +2,13 @@
   margin-top:30px; 
   
   .main-item{
-    height: 400px;
+
     
     .query-item{
       height: 50px;
       padding: 10px 10px;
+      margin-bottom: 5px;
+      margin-top: 0px;
       button{
         margin-left: 10px;
         background: #fff;
@@ -18,11 +20,11 @@
           top:30px;
         }
       .dropdown-menu>li>a:hover{
-        background: orange;
+        background: $themeColor;
         color:#fff;
       }
       .btn:hover, .btn:focus, .btn.focus {
-          color: orange;
+          color: $themeColor;
           text-decoration: none;
           box-shadow: 0px 0px 0px ;
       }
@@ -38,5 +40,47 @@
   .main-right{
     background: #fff;
     box-shadow: 1px 1px 2px rgba(32, 32, 32, 0.5);
+  }
+}
+.display-items{
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0px;
+  margin:0px 20px;
+  .items-body{
+    margin:0px;
+    .items-body-left{
+      
+      img{
+        width:120px;
+        height: 90px;
+      }
+    }
+    @media (min-width:1800px){
+      .items-body-right{
+        right:80px;
+      }
+    }
+    .items-body-right{
+
+      span{
+        i{
+          margin-right: 3px;
+        }
+        
+        .star-light{
+          color:$themeColor;
+        }
+        .star-blind{
+          color:#ddd;
+        }
+      }
+      .small-tips{
+          float: right;
+          small{
+            margin-right: 3px;
+            color:#888;
+          }
+        }
+    }
   }
 }

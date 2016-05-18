@@ -10,26 +10,25 @@
       text-decoration: none;
       }
     a:hover{
-      color: orange;
+      color: $themeColor;
     }  
     .production-class-head{
       margin-top:10px;
-      p>a{
-        margin-left: 10px;
+      .production-class-title{
+        color:#888;
       }
     }
  
     dl>li{
-      margin-left: 20px;
-      margin-top:10px;
+      margin:10px 10px 0px 10px;
       text-align: center;
+      width:65px;
     }
-    dl>.active{
-      background: darkorange;
+    dl>li>.active{
+      background: $themeActiveColor;
+      border: 1px solid $themeColor;
       border-radius: 2px;
-      a{
-        color: white;
-      }
+      color:white;
     }
     
   }
@@ -38,9 +37,9 @@
   margin-top: 0px;
 }
 .breadcurmb-bar{
-  margin-top:32px;
+  margin-top:57px;
   .breadcrumb{
-    background: #ddd;
+    background: $bodyColor;
     padding-bottom: 0px;
   }
 }

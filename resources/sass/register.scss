@@ -13,13 +13,16 @@
     
     .tips{
       margin-top:100px;
-      margin-left: 50px; 
+
       
     }
     
     .auth-list{
       margin-top:50px;
-      margin-left: 50px;
+      width: 400px;
+      height: 100px;
+      display: block;
+      margin-left: auto;
       margin-right:auto;
       
       .auth-wechat,
@@ -27,9 +30,9 @@
       .auth-weibo,
       .auth-qq{
         position: relative;
-        color: red;
+        color: $themeColor;
         float: left;
-        margin-left:25px;
+        margin-left:37px;
       }
       .auth-wechat{       
 	      background-position: -53px;
@@ -80,7 +83,7 @@
 }
 .moreButton:hover,
 .moreArrow:hover{
-  color: orange;
+  color: $themeColor;
 }
 .moreArrow{
   transform: all 1s;

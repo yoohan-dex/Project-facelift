@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+  <meta name="viewport"  initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Starter Template for Bootstrap</title>
@@ -25,10 +25,10 @@
           <div class="col-xs-6">
             <ul class="nav navbar-nav top1">
 
-              <li><a href="">点评账号登录</a></li>
+              <li><a href="./login.html">点评账号登录</a></li>
               <li><a href="">QQ登录</a></li>
-              <li><a href="">注册</a></li>
-              <li><a href="">点评网首页</a></li>
+              <li><a href="./register.html">注册</a></li>
+              <li><a href="./main-item.html">点评网首页</a></li>
             </ul>
           </div>
           <div id="myStatus" class="col-xs-2 col-xs-push-4">
@@ -140,8 +140,8 @@
       <div class="col-xs-12">
         <ol class="breadcrumb">
           <li><a href="#">首页</a></li>
-          <li><a href="#">asdfsd</a></li>
-          <li class="active">sadfsdf</li>
+          <li><a href="#">眉毛</a></li>
+          <li class="active">韩式</li>
         </ol>
       </div>
     </div>
@@ -162,16 +162,25 @@
                     <div class="class-box">
                       <div class="col-xs-2 production-class-head">
                         <div class="col-xs-6">
-                          <p class="text-center">Classes:</p>
+                          <p class="text-center production-class-title">类别:</p>
                         </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                          <p class="text-center"><a href="">All</a></p>
+                        <div class="col-xs-6">
+                          <p class="text-center"><a href="">不限</a></p>
                         </div>
                       </div>
                       <div class="col-xs-10">
                         <dl class="list-inline">
-                          <li class="active"><a href="">jidjfdf</a></li>
-                          <li><a href="">jidjfdf</a></li>
+                          <li><a href="">眉毛</a></li>
+                          <li><a href="">嘴巴</a></li>
+                          <li><a href="">额头</a></li>
+                          <li><a href="">睫毛</a></li>
+                          <li><a href="">脖子</a></li>
+                          <li><a href="">肚皮</a></li>
+                          <li><a href="">手</a></li>
+                          <li><a href="">眼角</a></li>
+                          <li><a href="">鼻子</a></li>
+                          <li><a href="">手臂</a></li>
+                          <li><a href="">腿</a></li>
                         </dl>
                       </div>
                     </div>
@@ -188,16 +197,16 @@
                     <div class="class-box">
                       <div class="col-xs-2 production-class-head">
                         <div class="col-xs-6">
-                          <p class="text-center">commend:</p>
+                          <p class="text-center production-class-title">推荐:</p>
                         </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                          <p class="text-center"><a href="">All</a></p>
+                        <div class="col-xs-6">
+                          <p class="text-center"><a href="">不限</a></p>
                         </div>
                       </div>
                       <div class="col-xs-10">
                         <dl class="list-inline">
-                          <li><a href="">jidjfdf</a></li>
-                          <li><a href="">jidjfdf</a></li>
+                          <li><a href="">曙光</a></li>
+                          <li><a href="">莆田</a></li>
                         </dl>
                       </div>
                     </div>
@@ -214,16 +223,16 @@
                     <div class="class-box">
                       <div class="col-xs-2 production-class-head">
                         <div class="col-xs-6">
-                          <p class="text-center">Location:</p>
+                          <p class="text-center production-class-title">位置:</p>
                         </div>
-                        <div class="col-xs-3 col-xs-offset-2">
-                          <p class="text-center"><a href="">All</a></p>
+                        <div class="col-xs-6">
+                          <p class="text-center"><a href="">不限</a></p>
                         </div>
                       </div>
                       <div class="col-xs-10">
                         <dl class="list-inline">
-                          <li><a href="">jidjfdf</a></li>
-                          <li><a href="">jidjfdf</a></li>
+                          <li><a href="" class="active">白云区</a></li>
+                          <li><a href="">峡山区</a></li>
                         </dl>
                       </div>
                     </div>
@@ -242,7 +251,7 @@
         <div class="main-item">
           <div class="row">
             <div class="col-xs-12">
-              <div id="query-item" class="query-item">
+              <div id="query-item" class="query-item page-header">
                 <form role="form" class="form-inline">
 
                   <button class="btn">好评</button>
@@ -260,7 +269,70 @@
                 </form>
               </div>
             </div>
-          </div>
+          </div> <!--query-item-->
+          <div class="row display-items">
+            <div class="col-xs-12">
+              <div class="items-body">
+                <div class="items-body-left col-xs-3"><img src="./img/wuming.jpg" alt=""></div>
+                <div class="items-body-right col-xs-9">
+                  <div><h4>曙光医学美容</h4></div>
+                  <div>
+                    <span><i class="fa fa-star star-light"></i><i class="fa fa-star  star-light"></i><i class="fa fa-star star-light"></i><i class="fa fa-star star-light"></i><i class="fa fa-star star-blind"></i></span>
+                    <span><i>4002条评论</i></span>
+                    <span class="small-tips">
+                      <small>口味</small><small>8.9</small>
+                      <small>环境</small><small>8.4</small>
+                      <small>服务</small><small>9.1</small>
+                    </span>
+                  </div>
+                  <div><span>脸|和平公园天宝路</span></div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>  <!--display-items-->
+          <div class="row display-items">
+            <div class="col-xs-12">
+              <div class="items-body">
+                <div class="items-body-left col-xs-3"><img src="./img/wuming.jpg" alt=""></div>
+                <div class="items-body-right col-xs-9">
+                  <div><h4>曙光医学美容</h4></div>
+                  <div>
+                    <span><i class="fa fa-star star-light"></i><i class="fa fa-star  star-light"></i><i class="fa fa-star star-light"></i><i class="fa fa-star star-light"></i><i class="fa fa-star star-blind"></i></span>
+                    <span><i>4002条评论</i></span>
+                    <span class="small-tips">
+                      <small>口味</small><small>8.9</small>
+                      <small>环境</small><small>8.4</small>
+                      <small>服务</small><small>9.1</small>
+                    </span>
+                  </div>
+                  <div><span>脸|和平公园天宝路</span></div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>  <!--display-items-->
+          <div class="row display-items">
+            <div class="col-xs-12">
+              <div class="items-body">
+                <div class="items-body-left col-xs-3"><img src="./img/wuming.jpg" alt=""></div>
+                <div class="items-body-right col-xs-9">
+                  <div><h4>曙光医学美容</h4></div>
+                  <div>
+                    <span><i class="fa fa-star star-light"></i><i class="fa fa-star  star-light"></i><i class="fa fa-star star-light"></i><i class="fa fa-star star-light"></i><i class="fa fa-star star-blind"></i></span>
+                    <span><i>4002条评论</i></span>
+                    <span class="small-tips">
+                      <small>口味</small><small>8.9</small>
+                      <small>环境</small><small>8.4</small>
+                      <small>服务</small><small>9.1</small>
+                    </span>
+                  </div>
+                  <div><span>脸|和平公园天宝路</span></div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>  <!--display-items-->
         </div>
       </div>
       <div class="col-xs-3">
