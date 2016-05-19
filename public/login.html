@@ -25,10 +25,10 @@
           <div class="col-xs-6">
             <ul class="nav navbar-nav top1">
 
-              <li><a href="">点评账号登录</a></li>
+              <li><a href="./login.html">点评账号登录</a></li>
               <li><a href="">QQ登录</a></li>
-              <li><a href="">注册</a></li>
-              <li><a href="">点评网首页</a></li>
+              <li><a href="./registration.html">注册</a></li>
+              <li><a href="./main-item.html">点评网首页</a></li>
             </ul>
           </div>
           <div id="myStatus" class="col-xs-2 col-xs-push-4">
@@ -66,15 +66,78 @@
                   <a href=""></a>
                 </div>
                 <div class="login-title">
-                  <h1>Login</h1>
+                  <h2>登录</h2>
                 </div>
               </div>
-              
+
             </div>
           </row>
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row auth-box">
+        <div class="col-xs-6 other-login col-xs-push-1">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="tips text-center">
+                <p>客官，您可以使用以下帐号直接登录点评，无需注册</p>
+              </div>
+              <div class="auth-list">
+                <a href="" class="auth-qq"><span>QQ</span></a>
+                <a href="" class="auth-wechat"><span>微信</span></a>
+                <a href="" class="auth-weibo"><span>微博</span></a>
+                <a href="" class="auth-alibaba"><span>阿里</span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="reg-right" class="col-xs-4 col-xs-pull-1 log-right">
+          <div class="col-xs-12">
+            <h3 class="text-center">点评帐号登录</h3></div>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputUsername" class="control-label sr-only" required="required">Username</label>
+              <div class="col-xs-12">
+                <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputPassword" class="col-xs-2 control-label sr-only" required="required">Password</label>
+              <div class="col-xs-12">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <div id="moreInput" class="row lessInput other-login-for-login">
+              <div class="col-xs-12">
+                <div class="tips text-center">
+                  <p>客官，您可以使用以下帐号直接登录点评，无需注册</p>
+                </div>
+                <div class="auth-list">
+                  <a href="" class="auth-qq"><span>QQ</span></a>
+                  <a href="" class="auth-wechat"><span>微信</span></a>
+                  <a href="" class="auth-weibo"><span>微博</span></a>
+                  <a href="" class="auth-alibaba"><span>阿里</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-4 col-xs-push-5">
+                <div id="moreButton"><label class="control-label moreButton">其他登录&nbsp<i class="fa fa-angle-down moreArrow"></i></label></div>
+              </div>
+              <div class=" col-xs-4 col-xs-push-4">
+                <button type="submit" class="btn btn-default btn-submit">登录</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   </div>
   <!-- /.container -->
 

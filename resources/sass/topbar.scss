@@ -1,7 +1,7 @@
 // Bootstrap Starter Template Styles
 $bodyColor:#eee;
-$themeColor:skyblue;
-$themeActiveColor:blue;
+$themeColor:#d58;
+$themeActiveColor:$themeColor+#111;
 body {
   padding-top: 0px;
   background:$bodyColor;

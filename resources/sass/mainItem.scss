@@ -62,17 +62,12 @@
     }
     .items-body-right{
 
-      span{
+      .evalution{
         i{
           margin-right: 3px;
-        }
-        
-        .star-light{
           color:$themeColor;
         }
-        .star-blind{
-          color:#ddd;
-        }
+        
       }
       .small-tips{
           float: right;

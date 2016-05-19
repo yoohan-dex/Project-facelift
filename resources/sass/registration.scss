@@ -1,6 +1,7 @@
 
 .auth-box{
 	min-height:500px; 
+  margin-top:70px;
   
 	
 	
@@ -13,8 +14,6 @@
     
     .tips{
       margin-top:100px;
-
-      
     }
     
     .auth-list{
@@ -64,8 +63,36 @@
 	
 }
 .reg-right{
+  
   top:60px;
-  transform: all 1s;
+  left:100px;
+  border-radius: 4px;
+  background: #fff;
+  .form-group{
+    input,
+    select{
+      transition: all 0.6s;
+      box-shadow:0px 0px 0px $themeColor;
+    }
+    input[type=radio]{
+      transition:all 0s;
+    }
+    input[type=number]:focus,
+    input[type=text]:focus,
+    input[type=email]:focus,
+    input[type=password]:focus,
+    select:focus{
+      box-shadow:0px 0px 10px $themeColor;
+      border:1px solid $themeColor;
+    }
+    
+  }
+  .btn-submit:hover{
+      background: $themeActiveColor;
+      color: white;
+      border-color: white;
+      transition: all 0.3s;
+  }
 }
 .reg-right-up{
   top:20px;
