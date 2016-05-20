@@ -93,9 +93,12 @@
       border-color: white;
       transition: all 0.3s;
   }
+  .passwdError{
+    margin-bottom: 5px;
+  }
 }
 .reg-right-up{
-  top:20px;
+  top:0px;
 }
 .lessInput{
   display: none;

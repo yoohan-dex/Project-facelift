@@ -104,9 +104,9 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="inputEmail3" class="col-xs-2 control-label sr-only" required="required">Email</label>
+            <label for="inputEmail" class="col-xs-2 control-label sr-only" required="required">Email</label>
             <div class="col-xs-12">
-              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail" placeholder="Email">
             </div>
           </div>
           <div class="form-group">
@@ -121,6 +121,8 @@
               <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
             </div>
           </div>
+          <p id="passwdError" class="passwdError hidden text-center">密码不一致，请检查后再试试</p>
+          <p id="passwdError2" class="passwdError2 hidden text-center">密码必须是8位，且为字母和数字的组合</p>
           <div class="form-group">
             <label for="inputPhone" class="col-xs-2 control-label sr-only" required="required">Phone</label>
             <div class="col-xs-12">
@@ -166,7 +168,7 @@
               <div id="moreButton"><label class="control-label moreButton">更多选项&nbsp<i class="fa fa-angle-down moreArrow"></i></label></div>
             </div>
             <div class=" col-xs-4 col-xs-push-4">
-              <button type="submit" class="btn btn-default btn-submit">注册</button>
+              <button type="submit" id="btn-submit-registration" class="btn btn-default btn-submit">注册</button>
             </div>
           </div>
         </form>

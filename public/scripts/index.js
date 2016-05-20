@@ -32,6 +32,65 @@
   }
 })();
 //topbar^^
+
+(function(){
+  var $inputUsername = $('#inputUsername'),
+      $inputEmail = $('#inputEmail'),
+      $inputPhone = $('#inputPhone'),
+      $passwordInput = $('#inputPassword'),
+      $passwordInput2 = $('#inputPassword2'),
+      $btnSubmit = $('#btn-submit-registration');
+      $btnSubmit2 = $('#btn-submit-login')
+      $passwdError = $('#passwdError'),
+      $passwdError2 = $('#passwdError2');
+      
+  var reg =/\w{8,}$/;
+  
+
+  var cannotsubmit = false;
+  $passwordInput.blur(function(){
+    if($passwordInput.val()!==$passwordInput2.val()&&$passwordInput2.val()!=''){
+      $passwdError.removeClass('hidden');
+      cannotsubmit = false;
+    }else{
+      $passwdError.addClass('hidden');
+      cannotsubmit = true;
+    }
+    if(!reg.test($passwordInput.val())){
+      $passwdError2.removeClass('hidden')
+      cannotsubmit = false;
+    }else{
+      $passwdError2.addClass('hidden')
+      cannotsubmit = true;
+    } 
+  })
+  $passwordInput2.blur(function(){
+    if($passwordInput.val()!==$passwordInput2.val()&&$passwordInput2.val()!=''){
+      $passwdError.removeClass('hidden');
+      cannotsubmit = false;
+    }else{
+      $passwdError.addClass('hidden');
+      cannotsubmit = true;
+    }
+
+  })
+   $btnSubmit.click(function(event){
+     if($inputUsername.val().trim()==''||$inputEmail.val().trim()==''||$inputPhone.val().trim()==''||$passwordInput.val().trim()==''||$passwordInput2.val().trim()==''){
+      event.preventDefault();
+      alert('请完成注册表单');
+     }
+   })
+   $btnSubmit2.click(function(event){
+     if($inputUsername.val().trim()==''||$passwordInput.val().trim()==''){
+      event.preventDefault();
+      alert('请完成登录表单');
+     }
+   })
+    
+})();
+
+    
+
   
 
 
