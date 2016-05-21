@@ -2,6 +2,7 @@
 $bodyColor:#eee;
 $themeColor:#d58;
 $themeActiveColor:$themeColor+#111;
+$themeHoverColor:$themeActiveColor+#033;
 body {
   padding-top: 0px;
   background:$bodyColor;
@@ -166,9 +167,9 @@ body {
     }
   }
   .search-button:hover{
-    background:$themeActiveColor;
+    
     i{
-      color:gray;
+      color:$themeHoverColor;
     }
   }
 }
