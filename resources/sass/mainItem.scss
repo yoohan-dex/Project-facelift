@@ -57,9 +57,23 @@
         
       }
     }
+    .items-body-right{
+        .body-right-small{
+          i:hover,
+          p:hover{
+            color:$themeColor;
+          }
+        }
+        h4:hover{
+          color:$themeColor;
+        }
+      }
     @media (min-width:1800px){
       .items-body-right{
         right:80px;
+        h4:hover{
+          color:$themeColor;
+        }
       }
     }
       .small-tips{
