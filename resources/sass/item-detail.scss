@@ -1,0 +1,58 @@
+.item-detail-card{
+  padding: 10px 20px 20px 20px;
+  background: white;
+  .detail-title{
+    .title-small{
+      margin-bottom: 10px;
+    }
+    .edit-and-share{
+      button{
+        background: $themeColor;
+        color: white;
+        border-color: $themeColor;
+      }
+      button:hover{
+        background: $themeActiveColor;
+        border-color:$themeActiveColor;
+      }
+      .edit-and-share-right{
+        margin-top: 10.5px;
+        position: absolute;
+        right:0;
+        i,a{
+          color:#aaa;
+          cursor:pointer;
+          text-decoration: none;
+        }
+        i{
+          
+          margin-left: 10px;
+          
+          
+        }
+        a{
+          
+          margin-right: 20px;
+          font-size: 20px;
+          
+        }
+      }
+    }
+  }
+}
+.detail-comment{
+  margin:5px 20px 5px 20px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 5px 5px 5px;
+  .profile-img{
+    .thumbnail{
+      border-radius: 69.06px;
+      border: 0px;
+    }
+  }
+
+}
+.detail-card-img{
+  padding: 20px;
+}
+
